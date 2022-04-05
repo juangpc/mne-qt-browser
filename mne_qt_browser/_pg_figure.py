@@ -1537,7 +1537,7 @@ class SettingsDialog(_BaseDialog):
 
     def __init__(self, main, **kwargs):
         super().__init__(main, **kwargs)
-
+        super().setWindowTitle('Settings')
         layout = QFormLayout()
 
         self.downsampling_box = QSpinBox()
@@ -1614,7 +1614,7 @@ class HelpDialog(_BaseDialog):
 
     def __init__(self, main, **kwargs):
         super().__init__(main, **kwargs)
-
+        super().setWindowTitle('Help')
         # Show all keyboard-shortcuts in a Scroll-Area
         layout = QVBoxLayout()
         keyboard_label = QLabel('Keyboard Shortcuts')
